@@ -1,0 +1,191 @@
+$blue: #5e72e4;
+$indigo: #5603ad;
+$purple: #8965e0;
+$pink: #f3a4b5;
+$red: #f5365c;
+$orange: #fb6340;
+$yellow: #ffd600;
+$green: #2dce89;
+$teal: #11cdef;
+$cyan: #2bffc6;
+$white: #fff;
+$gray: #8898aa;
+$gray-dark: #32325d;
+$light: #ced4da;
+$lighter: #e9ecef;
+$primary: #5e72e4;
+$secondary: #f7fafc;
+$success: #2dce89;
+$info: #11cdef;
+$warning: #fb6340;
+$danger: #f5365c;
+$light: #adb5bd;
+$dark: #212529;
+$default: #172b4d;
+$white: #fff;
+$neutral: #fff;
+$darker: black;
+
+$a-color-gray-light: rgba(179,178,177,1);
+$a-color-gray-dark: rgba(112,111,111,1);
+
+$a-color-blue: rgba(0,175,224,1);
+$a-color-green: rgba(112,212,75,1);
+$a-color-red: rgba(230,66,122,1);
+
+//Color apply
+$border-color-normal: rgba($a-color-gray-light,.25);
+$border-color-active: rgba($a-color-blue,.5);
+$border-color-hover: rgba($a-color-gray-light,.5);
+
+$btn-secondary-color-normal: rgba($a-color-gray-light,.25);
+$btn-secondary-color-active: rgba($a-color-gray-light,.5);
+$btn-secondary-color-hover: rgba($a-color-gray-light,.5);
+
+//
+.bg-circle{
+	width: 2rem;
+	height: 2rem;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+}
+
+.bg-gray-light{ background-color: $a-color-gray-light;}
+.bg-gray-dark{ background-color: $a-color-gray-light;}
+
+.bg-blue{ background-color: $a-color-blue}
+.bg-green{ background-color: $a-color-green}
+.bg-red{ background-color: $a-color-red}
+
+.navbar-brand-img{
+	width: 3rem;
+}
+
+html{
+	font-size: 16px;
+	height: 100%;
+	body{
+		color: $a-color-gray-dark;
+		font-size: 1rem;
+		// background-color: #FCFCFB;
+		background-color: #f8f9fe;
+	}
+}
+
+aside{
+	// display: -webkit-box;
+	// display: flex;
+	// box-sizing: border-box;
+	// width: 240px;
+	min-width: 240px;
+	height: 100%;
+	background: rgba($a-color-gray-light,.05);
+	// -webkit-box-orient: vertical;
+	// -webkit-box-direction: normal;
+	// flex-direction: column;
+	// -webkit-box-pack: justify;
+	// justify-content: space-between;
+	position: relative;
+	padding: 1rem 2rem;
+	&.dashboard-aside{
+		height: 100vh;
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+	.navbar-brand-img{
+		margin: 2rem 0 3rem ;
+	}
+	nav{
+		ul{
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		li{
+			margin-bottom: 1rem;
+		}
+	}
+	.nav-label{
+		padding: 1rem 0;
+		color: $a-color-gray-light;
+		font-size: .75rem;
+		letter-spacing: .5px;
+	}
+	.btn{
+		color: $a-color-gray-dark;
+		&.btn-active{
+			background-color: rgba($a-color-blue,.15);
+			color: $a-color-blue;
+		}
+		&:hover{
+			box-shadow: 0 !important;
+			background-color: rgba($a-color-gray-light,.15) !important;
+		}
+	}
+}
+
+header{
+	background-color: white;
+	&.main-header{
+		.btn-notification{
+			width: 2rem;
+			height: 2rem;
+			border-radius: 5px;
+			border: 1px solid  $border-color-normal;
+			padding: 0;
+			text-align: center;
+			padding: 0.25rem 0 0;
+			color: $a-color-gray-light;
+		}
+		.btn-useraccount{
+			border-radius: 100%;
+			width: 2rem;
+			height: 2rem;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			margin-left: 1rem;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	&.project-header{
+		.btn{
+			box-shadow: none;
+			background-color: $btn-secondary-color-normal;
+		}
+		.project-name{
+				margin: 0 1rem;
+			input{
+				padding: 0.25rem 0.5rem;
+				margin-left: .5rem;
+				border: 0;
+				border-bottom: 1px solid $border-color-normal;
+				text-overflow: ellipsis;
+				&:hover{
+					border-bottom: 1px solid $border-color-hover;
+				}
+				&:focus{
+					border-bottom: 1px solid $border-color-active;
+					outline: -webkit-focus-ring-color auto 0;
+				}
+			}
+		}
+	}
+}
+
+
+// fixes
+.btn:not(.bg-transparent):not([class*='btn-outline']):not(.btn-light):not(.btn-link):not([class*='alpha-']):not(.fab-menu-btn):hover{
+	box-shadow: 0 0 0 0 !important;
+}
+
+
+
+
+
+

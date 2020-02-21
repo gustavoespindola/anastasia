@@ -1,0 +1,157 @@
+.bg-circle {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.bg-gray-light {
+  background-color: #b3b2b1;
+}
+
+.bg-gray-dark {
+  background-color: #b3b2b1;
+}
+
+.bg-blue {
+  background-color: #00afe0;
+}
+
+.bg-green {
+  background-color: #70d44b;
+}
+
+.bg-red {
+  background-color: #e6427a;
+}
+
+.navbar-brand-img {
+  width: 3rem;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+html body {
+  color: #706f6f;
+  font-size: 1rem;
+  background-color: #f8f9fe;
+}
+
+aside {
+  min-width: 240px;
+  height: 100%;
+  background: rgba(179, 178, 177, 0.05);
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+aside.dashboard-aside {
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+aside .navbar-brand-img {
+  margin: 2rem 0 3rem;
+}
+
+aside nav ul {
+  padding: 0;
+}
+
+aside nav ul, aside nav li {
+  list-style: none;
+}
+
+aside nav li {
+  margin-bottom: 1rem;
+}
+
+aside .nav-label {
+  padding: 1rem 0;
+  color: #b3b2b1;
+  font-size: .75rem;
+  letter-spacing: .5px;
+}
+
+aside .btn {
+  color: #706f6f;
+}
+
+aside .btn.btn-active {
+  background-color: rgba(0, 175, 224, 0.15);
+  color: #00afe0;
+}
+
+aside .btn:hover {
+  box-shadow: 0 !important;
+  background-color: rgba(179, 178, 177, 0.15) !important;
+}
+
+header {
+  background-color: white;
+}
+
+header.main-header .btn-notification {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgba(179, 178, 177, 0.25);
+  padding: 0;
+  text-align: center;
+  padding: 0.25rem 0 0;
+  color: #b3b2b1;
+}
+
+header.main-header .btn-useraccount {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+}
+
+header.main-header .btn-useraccount img {
+  width: 100%;
+}
+
+header.project-header .btn {
+  box-shadow: none;
+  background-color: rgba(179, 178, 177, 0.25);
+}
+
+header.project-header .project-name {
+  margin: 0 1rem;
+}
+
+header.project-header .project-name input {
+  padding: 0.25rem 0.5rem;
+  margin-left: .5rem;
+  border: 0;
+  border-bottom: 1px solid rgba(179, 178, 177, 0.25);
+  text-overflow: ellipsis;
+}
+
+header.project-header .project-name input:hover {
+  border-bottom: 1px solid rgba(179, 178, 177, 0.5);
+}
+
+header.project-header .project-name input:focus {
+  border-bottom: 1px solid rgba(0, 175, 224, 0.5);
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+.btn:not(.bg-transparent):not([class*='btn-outline']):not(.btn-light):not(.btn-link):not([class*='alpha-']):not(.fab-menu-btn):hover {
+  box-shadow: 0 0 0 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
