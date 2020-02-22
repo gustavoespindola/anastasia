@@ -47,6 +47,19 @@ $btn-secondary-color-hover: rgba($a-color-gray-light,.5);
 //Bootstrap
 $primary: $a-color-blue !important;
 
+$body-color: $a-color-gray-dark;
+$body-bg-color: white; // #f8f9fe; #FCFCFB
+
+$sidebar-color: gray;
+$sidebar-bg-color: white;
+
+//Font Size
+$fs-xxxs: 	.500rem; //8px
+$fs-xxs: 		.625rem; //10px
+$fs-xs: 			.750rem; //12px
+$fs-s: 				.875rem; //14px
+$fs-md: 			1.00rem; //16px
+
 //
 .accent-color-primary{
 	color: $a-color-blue;
@@ -59,6 +72,12 @@ $primary: $a-color-blue !important;
 .bg-green{ background-color: $a-color-green}
 .bg-red{ background-color: $a-color-red}
 
+// FONT
+.caption{
+	font-size: .75rem;
+	display: block;
+}
+
 html{
 	font-size: 16px;
 	height: 100%;
@@ -66,28 +85,32 @@ html{
 	body{
 		color: $a-color-gray-dark;
 		font-size: 1rem;
-		// background-color: #FCFCFB;
-		background-color: #f8f9fe;
-		opacity: 0;
-		transition: all .15s ease-in-out;
+		background-color: $body-bg-color;
+		// opacity: 0;
+		transition: all .1s ease;
+		
+		.main-content{
+			opacity: 0;
+			transform: translateY(5%);
+			transition: opacity .075s ease, transform .35s ease;
+		}
+
 		&.pace-done{
-			opacity: 1;
-			transition: all .15s ease-in-out;
+			transition: all .1s ease;
+			// opacity: 1;
+		
+			.main-content{
+				opacity: 1;
+				transform: translateY(0);
+				transition: opacity .075s ease, transform .35s ease;
+			}
+
 		}
 	}
 }
 
 aside{
-	// display: -webkit-box;
-	// display: flex;
-	// box-sizing: border-box;
-	// width: 240px;
-	// -webkit-box-orient: vertical;
-	// -webkit-box-direction: normal;
-	// flex-direction: column;
-	// -webkit-box-pack: justify;
-	// justify-content: space-between;
-	background: rgba($a-color-gray-light,.05);
+	background: $sidebar-bg-color;
 	.dashboard-aside{
 		padding: 1rem 2rem 0 1rem;
 		width: 100%;
@@ -208,7 +231,6 @@ header{
 		-ms-flex-align: center !important;
 		align-items: center !important;
 		font-size: 1.5rem;
-		color: gray !important;
 		text-align: center;
 		margin: 0;
 		justify-content: center!important;
@@ -228,7 +250,23 @@ header{
 	box-shadow: 0 0 0 0 !important;
 }
 
-
+section{
+	&.project-hero{
+		.datapicker{
+			position: absolute;
+			top: 3rem;
+			right: 3rem;
+			width: 15rem;
+		}
+	}
+	&.project-steps{
+		.badge{
+			position: absolute;
+			right: 1rem;
+			top: 1.5rem;
+		}
+	}
+}
 
 
 
@@ -248,8 +286,25 @@ header{
 	font-size: 1rem;
 }
 
+.datapicker{
+	input{
+		border: 0;
+		font-size: $fs-s;
+		width: 50%;	
+		max-width: 50%;
+		&:focus{
+			background-color: rgba($info,.1);
+			border-radius: 5px;
+			outline: 0;
+		}
+	}
+	i{
+		margin: 0 1rem;
+	}
+}
 
-//
+
+// Loader
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;

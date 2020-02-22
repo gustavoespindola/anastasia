@@ -22,6 +22,11 @@
   background-color: #e6427a;
 }
 
+.caption {
+  font-size: .75rem;
+  display: block;
+}
+
 html {
   font-size: 16px;
   height: 100%;
@@ -31,18 +36,30 @@ html {
 html body {
   color: #706f6f;
   font-size: 1rem;
-  background-color: #f8f9fe;
+  background-color: white;
+  transition: all .1s ease;
+}
+
+html body .main-content {
   opacity: 0;
-  transition: all .15s ease-in-out;
+  -ms-transform: translateY(5%);
+  transform: translateY(5%);
+  transition: opacity .075s ease, transform .35s ease;
 }
 
 html body.pace-done {
+  transition: all .1s ease;
+}
+
+html body.pace-done .main-content {
   opacity: 1;
-  transition: all .15s ease-in-out;
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition: opacity .075s ease, transform .35s ease;
 }
 
 aside {
-  background: rgba(179, 178, 177, 0.05);
+  background: white;
 }
 
 aside .dashboard-aside {
@@ -187,7 +204,6 @@ header.project-header .project-name input:focus {
   -ms-flex-align: center !important;
   align-items: center !important;
   font-size: 1.5rem;
-  color: gray !important;
   text-align: center;
   margin: 0;
   -ms-flex-pack: center !important;
@@ -207,6 +223,19 @@ header.project-header .project-name input:focus {
   box-shadow: 0 0 0 0 !important;
 }
 
+section.project-hero .datapicker {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  width: 15rem;
+}
+
+section.project-steps .badge {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+
 .input-group-alternative {
   transition: box-shadow .15s ease;
   border: 0;
@@ -217,6 +246,23 @@ header.project-header .project-name input:focus {
 
 .input-group-text i {
   font-size: 1rem;
+}
+
+.datapicker input {
+  border: 0;
+  font-size: 0.875rem;
+  width: 50%;
+  max-width: 50%;
+}
+
+.datapicker input:focus {
+  background-color: rgba(17, 205, 239, 0.1);
+  border-radius: 5px;
+  outline: 0;
+}
+
+.datapicker i {
+  margin: 0 1rem;
 }
 
 .pace {

@@ -33,7 +33,8 @@ function styles() {
 			}),
 		)
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./dist/css'));
+		.pipe(gulp.dest('./dist/css'))
+		.pipe(browserSync.stream());
 }
 
 /*
@@ -89,10 +90,9 @@ function watch() {
 				index: "index.html"
 		}
 	});
-	gulp.watch(paths.styles.src, styles).on('change', browserSync.reload);
+	gulp.watch(paths.styles.src, styles);
 	gulp.watch("./*.html").on('change', browserSync.reload);
 }
-
 
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`

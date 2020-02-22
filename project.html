@@ -60,15 +60,19 @@
 
 				<div class="main-content" id="panel" class="py-5">
 						
-						<section class="mt-5">
-
+						<section class="project-hero my-5">
 							<div class="container">
-
 								<div class="row">
 									
 									<div class="col-8">
-										<div class="card card-project p-5">
+										<div class="card card-project p-5 mb-3">
 											<div class="row align-items-center ">
+
+												<div class="datapicker input-group-text input-group-alternative">
+													<input class="" type="text" id="first-date" name="inicio" placeholder="Inicio" autocomplete="off" value="02/02/20">
+													<i class="fal fa-arrow-right"></i>
+													<input class="" type="text" id="second-date" name="llegada" placeholder="Llegada" autocomplete="off" value="02/02/20">
+												</div>
 
 												<div class="col-6">
 													<h5 class="d-block mb-1">Predictor</h5>
@@ -78,22 +82,6 @@
 													</span>
 												</div>
 													
-												<div class="col-3 d-flex justify-content-end">
-													<span>
-													<span class="h6 d-block ">SMAPE</span>
-													<span class="h1 d-block ">23.01</span>
-													<span class="h5 d-block m-0 ">Anastasia</span>
-													</span>
-												</div>
-
-												<div class="col-3 d-flex justify-content-end">
-													<span>
-													<span class="h6 d-block">SMAPE</span>
-													<span class="h1 d-block">43.01</span>
-													<span class="h5 d-block m-0">Average</span>
-												</span>
-												</div>
-
 												<div class="col-12 pt-5">
 														<canvas id="canvas-project"></canvas>
 												</div>										
@@ -101,17 +89,157 @@
 
 											</div>
 										</div>
+
+										<div class="alert alert-secondary fade show" role="alert"><strong>Secondary!</strong> This is a secondary alert—check it out!</div>
 									</div>
 
 									<div class="col-4">
-										<div class="card p-5">
-											<h3>3</h3>
+										
+										<div class="card p-5 mb-3">
+											<div class="row mb-4">
+												<div class="col text-left d-flex justify-content-start">
+													<span>
+													<span class="h6 d-block ">SMAPE</span>
+													<span class="h1 d-block ">23.01</span>
+													<span class="h5 d-block m-0 ">Anastasia</span>
+													</span>
+												</div>
+
+												<div class="col text-left d-flex justify-content-start">
+													<span>
+													<span class="h6 d-block">SMAPE</span>
+													<span class="h1 d-block">43.01</span>
+													<span class="h5 d-block m-0">Average</span>
+												</span>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12 text-left">
+													<a href="#" class="btn btn-primary m-0">Panel de control</a>
+												</div>
+											</div>
 										</div>
+
+										<div class="alert alert-info fade show" role="alert"><strong>Info!</strong> This is a info alert—check it out!</div>
+
 									</div>
 
 								</div>
 							</div>
+						</section>
 
+						<section class="project-steps my-5">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-4 col-12">
+										<div class="card p-4">
+											<h5>Paso 1</h5>
+										<h4><i class="fad fa-database"></i><span class="ml-2">Fuente de datos</span></h4> <div class="badge badge-warning"><i class="fad fa-exclamation-triangle mr-2"></i>Aviso</div>
+										<div class="card-datalog">
+											<span class="log caption">Último update hace un mes</span>
+											<span class="log caption">id-documento-fecha.cvs</span>
+										</div>
+										<a href="#" class="btn btn-md btn-outline-secondary mt-3">Subir Archivo</a>
+										</div>
+									</div>
+									<div class="col-md-4 col-12">
+										<div class="card p-4">
+											<h5>Paso 2</h5>
+										<h4><i class="fad fa-database"></i><span class="ml-2">Fuente de datos</span></h4> <div class="badge badge-success"><i class="fad fa-check mr-2"></i>Listo</div>
+										<div class="card-datalog">
+											<span class="log caption">Último update el 12 de Febrero</span>
+											<span class="log caption">id-documento-fecha.cvs</span>
+										</div>
+										<a href="#" class="btn btn-md btn-outline-secondary mt-3">Subir Archivo</a>
+										</div>
+									</div>
+									<div class="col-md-4 col-12">
+										<div class="card p-4">
+											<h5>Paso 3</h5>
+										<h4><i class="fad fa-database"></i><span class="ml-2">Fuente de datos</span></h4> <div class="badge badge-success"><i class="fad fa-check mr-2"></i>Listo</div>
+										<div class="card-datalog">
+											<span class="log caption">Último update el 12 de Febrero</span>
+											<span class="log caption">id-documento-fecha.cvs</span>
+										</div>
+										<a href="#" class="btn btn-md btn-outline-secondary mt-3">Subir Archivo</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="dataset-table my-5">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<h3><i class="fad fa-database"></i><span class="ml-2">Fuente de datos</span></h3>
+									</div>
+								</div>
+								
+								<div class="row justify-content-between">
+									<div class="col-md-4">
+										<div class="form-group mb-2">
+											<div class="input-group-alternative input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text">
+														<i class="fal fa-search"></i>
+													</span>
+												</div>
+												<input placeholder="Buscar" type="text" class="form-control-alternative form-control">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-right">
+										<a href="/create-project.html" class="btn btn-outline-primary">Subir Archivo</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-12 w-100 mt-3">
+										<div class="table-responsive">
+											<table class="align-items-center table">
+												<thead class="thead-light">
+													<tr>
+														<th scope="col">ID</th>
+														<th scope="col">Nombre</th>
+														<th scope="col">Actualización</th>
+														<th scope="col">Tipo</th>
+														<th scope="col">Tamaño</th>
+														<th scope="col">Estado</th>
+													</tr>
+												</thead>
+
+												<tbody>
+													<tr>
+														<th scope="row">
+															<div class="align-items-center media">
+															<span class="mb-0 text-sm">1</span>
+														</div>
+														</th>
+														
+														<td>
+															<span class="mb-0 text-sm">pr3-1415ape-unilever-01.csv</span>
+														</td>
+														<td>
+															<span class="badge-dot mr-4 badge badge-"><i class="bg-warning"></i>Hace un día</span>
+														</td>
+														<td>
+															<span class="mb-0 text-sm">Transactional</span>
+														</td>
+														<td>
+															<span class="mb-0 text-sm">27.09 MB</span>
+														</td>
+														<td >
+														
+														</td>
+														</tr>
+												</tbody>
+											
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
 						</section>
 
 				</div>
@@ -156,17 +284,13 @@
 	<script type="text/javascript" src="base/tools/bootstrap-notify.min.js"></script>
 	<script type="text/javascript" src="base/global/default.js"></script>
 	<script type="text/javascript" src="base/global/main.js"></script>
-	<!-- <script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script> -->
 <!-- <script type="text/javascript" src="src/js/front.js"></script> -->
 <script type="text/javascript" src="base/plugins/pace.min.js"></script>
 
 <script>
-	
-	// labels: ['a','b','c','d','e','f','g','h','i'],
-	// data: [{0,-1,1,-1,-1,+2,+1,5,-1}],
 
-	var ctx = document.getElementById('canvas-project');
-	var myChart = new Chart(ctx, {
+	var pchrt = document.getElementById('canvas-project');
+	var projectChart = new Chart(pchrt, {
 	type: 'line',
 					data: {
 						labels: ['1','2','3','4','5'],
@@ -231,7 +355,6 @@
 								borderWidth: 1
 						}]
 				},
-
 		options: {
 
 		responsive: true,
