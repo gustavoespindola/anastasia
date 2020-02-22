@@ -48,7 +48,7 @@ $btn-secondary-color-hover: rgba($a-color-gray-light,.5);
 $primary: $a-color-blue !important;
 
 $body-color: $a-color-gray-dark;
-$body-bg-color: white; // #f8f9fe; #FCFCFB
+$body-bg-color: #FCFCFB; // #f8f9fe; #FCFCFB
 
 $sidebar-color: gray;
 $sidebar-bg-color: white;
@@ -63,6 +63,20 @@ $fs-md: 			1.00rem; //16px
 //
 .accent-color-primary{
 	color: $a-color-blue;
+}
+.accent-color-secondary{
+	color: $a-color-red;
+}
+
+.accent-bg-gray-light{
+	background-color: $a-color-gray-light;
+}
+
+.accent-bg-primary{
+	background-color: $a-color-blue;
+}
+.accent-bg-secondary{
+	background-color: $a-color-red;
 }
 
 .bg-gray-light{ background-color: $a-color-gray-light;}
@@ -79,15 +93,17 @@ $fs-md: 			1.00rem; //16px
 }
 
 html{
-	font-size: 16px;
-	height: 100%;
+	font-size: 17px;
+	height: auto !important;
 	-webkit-font-smoothing: antialiased;
 	body{
 		color: $a-color-gray-dark;
 		font-size: 1rem;
 		background-color: $body-bg-color;
-		// opacity: 0;
+		height: auto !important;
 		transition: all .1s ease;
+		font-family: 'proxima nova', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 		
 		.main-content{
 			opacity: 0;
@@ -164,7 +180,7 @@ header{
 		position: sticky;
 		top: 0;
 		z-index: 99;
-		box-shadow: -6px -6px 24px rgba(255, 255, 255, 0.25), 6px 6px 24px rgba(78, 84, 113, 0.05);
+		// box-shadow: -6px -6px 24px rgba(255, 255, 255, 0.25), 6px 6px 24px rgba(78, 84, 113, 0.05);
 		.btn-notification{
 			width: 3rem;
 			height: 3rem;
@@ -190,10 +206,10 @@ header{
 		}
 	}
 	&.project-header{
-		position: sticky;
+		position: relative;
 		top: 0;
 		z-index: 99;
-		box-shadow: -6px -6px 24px rgba(255, 255, 255, 0.25), 6px 6px 24px rgba(78, 84, 113, 0.05);
+		// box-shadow: -6px -6px 24px rgba(255, 255, 255, 0.25), 6px 6px 24px rgba(78, 84, 113, 0.05);
 		.btn{
 			box-shadow: none;
 			background-color: $btn-secondary-color-normal;
@@ -268,8 +284,6 @@ section{
 	}
 }
 
-
-
 // FORM
 
 .form-group{
@@ -287,6 +301,18 @@ section{
 }
 
 .datapicker{
+	label{
+		position: absolute;
+		font-size: $fs-xs;
+		&:first-child{
+			top: -1.5rem;
+			left: 0;
+		}
+		&:nth-child(2){
+			top: -1.5rem;
+			left: 50%;
+		}
+	}
 	input{
 		border: 0;
 		font-size: $fs-s;
@@ -303,6 +329,22 @@ section{
 	}
 }
 
+// CARDS
+.card{
+	border: 1px solid white !important;
+	box-shadow: 0 0 0 0 rgba(136, 152, 170, .15);
+		// box-shadow: -3px -3px 24px 0 rgba(255, 255, 255, 0.15), 3px 3px 12px 0 rgba(136, 152, 170, 0.09);
+	&.shadow{
+		box-shadow: -3px -3px 24px 0 rgba(255, 255, 255, 0.25), 3px 3px 24px 0 rgba(136, 152, 170, 0.1) !important;
+		// box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15);
+	}
+}
+
+// Badge
+.badge-lg {
+	padding: $fs-xxs/2 $fs-xxs;
+	font-size: $fs-xxs;
+}
 
 // Loader
 .pace {
@@ -385,12 +427,14 @@ section{
 
 // CHART
 /* Chart.js */
+.chart-brand-img{
+	width: 2.9rem;
+}
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
 
-		canvas {
-			-moz-user-select: none;
-			-webkit-user-select: none;
-			-ms-user-select: none;
-		}
-	
 
 @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
