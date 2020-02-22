@@ -7,28 +7,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="HandheldFriendly" content="True" />
 <title>Anastasia</title>
-<!-- Global stylesheets -->
-<!-- FAVICON -->
-<link rel="shortcut icon" href="http://demo.anastasia.ai/public/global/images/favicon/favicon.png">
-<!-- /FAVICON -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/vendor/nucleo/css/nucleo.css" type="text/css">
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/vendor/sweetalert2/dist/sweetalert2.min.css" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/icomoon/styles.css" rel="stylesheet" type="text/css">
-<!-- <link href="http://demo.anastasia.ai/tools/font-awesome/css/all.min.css" rel="stylesheet" type="text/css"> -->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
-<!-- 				{{{block "css"}}} -->
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/css/argon.css?v=1.0.0" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/colors.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/tools/animate.css/animate.min.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/components.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/default.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/typography.css" rel="stylesheet" type="text/css">
-<!--  -->
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/css/argon.css?v=1.0.0" type="text/css">
 
+<link rel="shortcut icon" href="http://demo.anastasia.ai/public/global/images/favicon/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<link rel="stylesheet" href="base/argon/nucleo.css" type="text/css">
+<link rel="stylesheet" href="base/argon/sweetalert2.min.css" type="text/css">
+<link href="base/global/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="base/argon/argon.css" type="text/css">
+<link href="base/global/colors.css" rel="stylesheet" type="text/css">
+<link href="base/tools/animate.min.css" rel="stylesheet" type="text/css">
+<link href="base/global/components.css" rel="stylesheet" type="text/css">
+<link href="base/global/default.css" rel="stylesheet" type="text/css">
+<link href="base/global/typography.css" rel="stylesheet" type="text/css">
+
+<!-- New Front -->
 <link rel="stylesheet" href="dist/css/style.css">
-<!-- /global stylesheets -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<!-- New Front -->
+
 </head>
 
 <body class="project">
@@ -63,22 +59,61 @@
 				</header>
 
 				<div class="main-content" id="panel" class="py-5">
-						<section class="py-5">
+						
+						<section class="mt-5">
+
 							<div class="container">
+
 								<div class="row">
-									<div class="col-12">
-										<h3>Nombre de sección</h3>
+									
+									<div class="col-8">
+										<div class="card card-project p-5">
+											<div class="row align-items-center ">
+
+												<div class="col-6">
+													<h5 class="d-block mb-1">Predictor</h5>
+													<h2 class="mb-1"><b>Nombre proyecto</b></h2>
+													<span class="m-0">
+														<small>Última predicción hoy a las 12:06, Última predicción hoy a las 12:06.</small>
+													</span>
+												</div>
+													
+												<div class="col-3 d-flex justify-content-end">
+													<span>
+													<span class="h6 d-block ">SMAPE</span>
+													<span class="h1 d-block ">23.01</span>
+													<span class="h5 d-block m-0 ">Anastasia</span>
+													</span>
+												</div>
+
+												<div class="col-3 d-flex justify-content-end">
+													<span>
+													<span class="h6 d-block">SMAPE</span>
+													<span class="h1 d-block">43.01</span>
+													<span class="h5 d-block m-0">Average</span>
+												</span>
+												</div>
+
+												<div class="col-12 pt-5">
+														<canvas id="canvas-project"></canvas>
+												</div>										
+
+
+											</div>
+										</div>
 									</div>
 
-									<div class="col-8">
-										<div class="card">1</div>
-									</div>
 									<div class="col-4">
-										<div class="card">2</div>
+										<div class="card p-5">
+											<h3>3</h3>
+										</div>
 									</div>
+
 								</div>
 							</div>
+
 						</section>
+
 				</div>
 
 
@@ -88,40 +123,156 @@
 	</div>
 
 
-<!-- Core JS files -->
-<script src="http://demo.anastasia.ai/tools/jquery/dist/jquery.min.js"></script>
-<script src="http://demo.anastasia.ai/tools/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/js/loaders/blockUi.js"></script>
-<!-- /core JS files -->
-<!-- Theme JS files -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/js-cookie/js.cookie.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/lavalamp/js/jquery.lavalamp.min.js"></script>
-<!-- Optional JS -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jvectormap-next/jquery-jvectormap.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<script src="http://demo.anastasia.ai/public/app/index/controller.js"></script>
-<script src="http://demo.anastasia.ai/public/app/index/main.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/controllerPasswordModule.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/mainPasswordModule.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/passwordModule.js"></script>
-<!-- Argon JS -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/js/argon.js?v=1.0.0"></script>
-</div>
-<!-- Demo JS - remove this in your project -->
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/argon/assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/moment/min/moment.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/moment/min/locales.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/remarkable-bootstrap-notify/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/default.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script>
-<!-- <script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script> -->
+	<!-- Core JS files -->
+	<script src="base/tools/jquery.min.js"></script>
+	<script src="base/tools/bootstrap.bundle.min.js"></script>
+	<script src="base/global/blockUi.js"></script>
+	<!-- /core JS files -->
+	<!-- Theme JS files -->
+	<script src="base/argon/js.cookie.js"></script>
+	<script src="base/argon/jquery.scrollbar.min.js"></script>
+	<script src="base/argon/jquery-scrollLock.min.js"></script>
+	<script src="base/argon/jquery.lavalamp.min.js"></script>
+	<!-- Optional JS -->
+	<script src="base/argon/Chart.min.js"></script>
+	<script src="base/argon/Chart.extension.js"></script>
+	<script src="base/argon/jquery-jvectormap.min.js"></script>
+	<script src="base/argon/jquery-jvectormap-world-mill.js"></script>
+	<script src="base/argon/Chart.min.js"></script>
+	<script src="base/argon/Chart.extension.js"></script>
+	<!-- <script src="base/controller.js"></script> -->
+	<!-- <script src="base/main.js"></script> -->
+	<script src="base/controllerPasswordModule.js"></script>
+	<script src="base/mainPasswordModule.js"></script>
+	<script src="base/passwordModule.js"></script>
+	<!-- Argon JS -->
+	<script src="base/argon/argon.js"></script>
+	</div>
 
-</body>
+	<!-- Demo JS - remove this in your project -->
+	<script type="text/javascript" src="base/argon/sweetalert2.min.js"></script>
+	<script type="text/javascript" src="base/tools/moment.min.js"></script>
+	<script type="text/javascript" src="base/tools/locales.min.js"></script>
+	<script type="text/javascript" src="base/tools/bootstrap-notify.min.js"></script>
+	<script type="text/javascript" src="base/global/default.js"></script>
+	<script type="text/javascript" src="base/global/main.js"></script>
+	<!-- <script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script> -->
+<!-- <script type="text/javascript" src="src/js/front.js"></script> -->
+<script type="text/javascript" src="base/plugins/pace.min.js"></script>
 
-</html>
+<script>
+	
+	// labels: ['a','b','c','d','e','f','g','h','i'],
+	// data: [{0,-1,1,-1,-1,+2,+1,5,-1}],
+
+	var ctx = document.getElementById('canvas-project');
+	var myChart = new Chart(ctx, {
+	type: 'line',
+					data: {
+						labels: ['1','2','3','4','5'],
+						datasets: [{
+								label: "Dataset with string point data",
+
+								data: [
+								{
+									x: 0, 
+									y: 9
+								}, 
+									{
+										x: 1, 
+										y: 2
+									}, 
+									{
+										x: 2,
+										y: -9
+									}, 
+									{
+										x: 3,
+										y: 7
+									},
+									{
+										x: 4,
+										y: 3
+									}, 
+									],  
+									fill: true,
+									backgroundColor: ['rgba(0,175,224,.05)'],
+									borderColor: ['rgba(0,175,224,.4'],
+									borderWidth: 1
+								}, 
+								
+								{
+
+								label: "Dataset with date object point data",
+								data: [{
+										x: 0, 
+										y: 5
+									}, 
+										{
+											x: 1, 
+											y: 4
+										}, 
+										{
+											x: 2,
+											y: 20
+										}, 
+										{
+											x: 3,
+											y: 5
+								},
+								{
+									x: 4,
+									y: 20
+								}, 
+								],
+								fill: true,
+								backgroundColor: ['rgba(230,66,122,.1)'],
+								borderColor: ['rgba(230,66,122,.4)'],
+								borderWidth: 1
+						}]
+				},
+
+		options: {
+
+		responsive: true,
+		title: {
+				display: true,
+				text: "",
+				fontSize: 9
+		},
+
+			layout: {
+				padding: {
+					left: 0,
+					right: 0,
+					top: 0,
+					bottom: 0
+				}
+			},
+
+			scales: {
+
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+							display: true,
+							labelString: 'Parametro'
+					}
+				}],
+				xAxes: [{
+						display: true,
+						scaleLabel: {
+								display: true,
+								labelString: 'Tiempo'
+						}
+				}]
+			}
+
+		}
+
+	});
+
+</script>
+	</body>
+
+	</html>
