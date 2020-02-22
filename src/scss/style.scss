@@ -50,7 +50,7 @@ $btn-secondary-color-hover: rgba($a-color-gray-light,.5);
 $primary: $a-color-blue !important;
 
 $body-color: $a-color-gray-dark;
-$body-bg-color: #FCFCFB; // #f8f9fe; #FCFCFB
+$body-bg-color: #f9f9f8; // // #FCFCFB; #f8f9fe; #FCFCFB
 
 $sidebar-color: gray;
 $sidebar-bg-color: white;
@@ -171,7 +171,7 @@ aside{
 			box-shadow: 0 !important;
 			background-color: rgba($a-color-gray-light,.15) !important;
 		}
-	}
+	} 
 }
 
 header{
@@ -179,7 +179,7 @@ header{
 	&.main-header{
 		position: sticky;
 		top: 0;
-		z-index: 99;
+		z-index: 99; 
 		// box-shadow: -6px -6px 24px rgba(255, 255, 255, 0.25), 6px 6px 24px rgba(78, 84, 113, 0.05);
 		.btn-notification{
 			width: 3rem;
@@ -188,7 +188,7 @@ header{
 			border: 1px solid  $border-color-normal;
 			padding: 0;
 			text-align: center;
-			padding: 0.5rem 0 0;
+			padding: 0.825rem 0 0;
 			color: $a-color-gray-dark;
 			font-size: 1.25rem;
 			margin-right: 1rem;

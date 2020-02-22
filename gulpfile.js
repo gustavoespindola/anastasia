@@ -21,6 +21,8 @@ var paths = {
 	},
 };
 
+var htmlSource = '**/*.html';
+
 function styles() {
 	return gulp
 		.src(paths.styles.src)
@@ -36,6 +38,13 @@ function styles() {
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(browserSync.stream());
 }
+
+function htmlreload() {
+	return gulp
+	.src(htmlSource)
+	.pipe(browserSync.stream());
+}
+
 
 /*
  * task to minify the css files
@@ -87,11 +96,11 @@ function watch() {
 			 watch: true,
 			 port: 8080,
 				baseDir: "./",
-				index: "index.html"
+				// index: "index.html"
 		}
 	});
 	gulp.watch(paths.styles.src, styles);
-	gulp.watch("./*.html").on('change', browserSync.reload);
+	gulp.watch(htmlSource, htmlreload);
 }
 
 /*

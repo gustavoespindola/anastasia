@@ -36,21 +36,25 @@
 			
 					<div class="dashboard-aside justify-content-center">
 						<img src="dist/img/isotype.svg" class="navbar-brand-img">
-						<h6 class="nav-label">Administración</h6>
+						<h6 class="nav-label"></h6>
 
 						<nav class="nav-primary">
 							<ul class="nav-content">
-								<li><a href="#" class="btn btn-active"><i class="fad fa-chart-pie"></i><span>Resumen</span></a></li>
-								<li><a href="#" class="btn "><i class="fad fa-folders"></i><span>Archivos</span></a></li>
-								<li><a href="#" class="btn "><i class="fad fa-folders"></i><span>Soluciones</span></a></li>
+								<li><a href="#" class="btn btn-active"><i class="fal fa-chart-pie"></i><span>Resumen</span></a></li>
+								<li><a href="#" class="btn "><i class="fal fa-folders"></i><span>Archivos</span></a></li>
+								<li><a href="#" class="btn "><i class="fal fa-brain"></i><span>Soluciones</span></a></li>
 							</ul>
 						</nav>
 
+					<h6 class="nav-label">Administración</h6>
 						<nav class="nav-primary"> 	
 							<ul class="nav-content">
-								<li><a href="#" class="btn"><i class="fad fa-folders"></i><span>Resumen</span></a></li>
-								<li><a href="#" class="btn"><i class="fad fa-folders"></i><span>Archivos</span></a></li>
-								<li><a href="#" class="btn"><i class="fad fa-folders"></i><span>Soluciones</span></a></li>
+								<li><a href="#" class="btn"><span>Administración</span></a></li>
+								<li><a href="#" class="btn"><span>Clientes</span></a></li>
+								<li><a href="#" class="btn"><span>Control Acceso</span></a></li>
+								<li><a href="#" class="btn"><span>Mis Proyectos</span></a></li>
+								<h6 class="nav-label">Log</h6>
+								<li><a href="#" class="btn"><span>Actividad</span></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -59,7 +63,7 @@
 
 			<main class="col-10">
 				
-				<header class="row main-header py-3  animated fadeIn">
+				<header class="row main-header py-3 animated fadeIn">
 					<div class="container align-items-center">
 						<div class="row align-items-center">
 							<div class="col-6">
@@ -67,10 +71,31 @@
 							</div>
 							<div class="col-6 d-flex justify-content-end align-items-center">
 								
-								<a href="#" class="btn btn-notification"><i class="fad fa-bell"></i></a>
 
-								<div class="btn-useraccount">
-									<img src="https://randomuser.me/api/portraits/women/79.jpg" alt="">
+								<div class="dropdown">
+								  <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  		<i class="fad fa-bell btn-notification"></i>
+								  </a>
+
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								    <a class="dropdown-item" href="#">Action</a>
+								    <a class="dropdown-item" href="#">Another action</a>
+								    <a class="dropdown-item" href="#">Something else here</a>
+								  </div>
+								</div>
+
+								<div class="dropdown">
+								  <a class=" " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    <div class="btn-useraccount">
+								    	<img src="https://randomuser.me/api/portraits/women/79.jpg" alt="">
+								    </div>
+								  </a>
+
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								    <a class="dropdown-item" href="#">Action</a>
+								    <a class="dropdown-item" href="#">Another action</a>
+								    <a class="dropdown-item" href="#">Something else here</a>
+								  </div>
 								</div>
 
 							</div>
@@ -146,8 +171,8 @@
 						</div>
 
 					</section>
-
 				</div>
+
 			</main>
 
 		</div>

@@ -52,7 +52,7 @@ html {
 html body {
   color: #706f6f;
   font-size: 1rem;
-  background-color: #FCFCFB;
+  background-color: #f9f9f8;
   height: auto !important;
   transition: all .1s ease;
 }
@@ -151,7 +151,7 @@ header.main-header .btn-notification {
   border: 1px solid rgba(179, 178, 177, 0.5);
   padding: 0;
   text-align: center;
-  padding: 0.5rem 0 0;
+  padding: 0.825rem 0 0;
   color: #706f6f;
   font-size: 1.25rem;
   margin-right: 1rem;
