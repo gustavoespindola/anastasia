@@ -7,28 +7,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="HandheldFriendly" content="True" />
 <title>Anastasia</title>
-<!-- Global stylesheets -->
-<!-- FAVICON -->
-<link rel="shortcut icon" href="http://demo.anastasia.ai/public/global/images/favicon/favicon.png">
-<!-- /FAVICON -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/vendor/nucleo/css/nucleo.css" type="text/css">
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/vendor/sweetalert2/dist/sweetalert2.min.css" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/icomoon/styles.css" rel="stylesheet" type="text/css">
-<!-- <link href="http://demo.anastasia.ai/tools/font-awesome/css/all.min.css" rel="stylesheet" type="text/css"> -->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
-<!-- 				{{{block "css"}}} -->
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/css/argon.css?v=1.0.0" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/colors.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/tools/animate.css/animate.min.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/components.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/default.css" rel="stylesheet" type="text/css">
-<link href="http://demo.anastasia.ai/public/global/css/typography.css" rel="stylesheet" type="text/css">
-<!--  -->
-<link rel="stylesheet" href="http://demo.anastasia.ai/public/global/argon/assets/css/argon.css?v=1.0.0" type="text/css">
 
+<link rel="shortcut icon" href="http://demo.anastasia.ai/public/global/images/favicon/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<link rel="stylesheet" href="base/argon/nucleo.css" type="text/css">
+<link rel="stylesheet" href="base/argon/sweetalert2.min.css" type="text/css">
+<link href="base/global/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="base/argon/argon.css" type="text/css">
+<link href="base/global/colors.css" rel="stylesheet" type="text/css">
+<link href="base/tools/animate.min.css" rel="stylesheet" type="text/css">
+<link href="base/global/components.css" rel="stylesheet" type="text/css">
+<link href="base/global/default.css" rel="stylesheet" type="text/css">
+<link href="base/global/typography.css" rel="stylesheet" type="text/css">
+
+<!-- New Front -->
 <link rel="stylesheet" href="dist/css/style.css">
-<!-- /global stylesheets -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<!-- New Front -->
+
 </head>
 
 <body class="home">
@@ -103,37 +99,38 @@
 
 
 <!-- Core JS files -->
-<script src="http://demo.anastasia.ai/tools/jquery/dist/jquery.min.js"></script>
-<script src="http://demo.anastasia.ai/tools/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/js/loaders/blockUi.js"></script>
+<script src="base/tools/jquery.min.js"></script>
+<script src="base/tools/bootstrap.bundle.min.js"></script>
+<script src="base/global/blockUi.js"></script>
 <!-- /core JS files -->
 <!-- Theme JS files -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/js-cookie/js.cookie.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/lavalamp/js/jquery.lavalamp.min.js"></script>
+<script src="base/argon/js.cookie.js"></script>
+<script src="base/argon/jquery.scrollbar.min.js"></script>
+<script src="base/argon/jquery-scrollLock.min.js"></script>
+<script src="base/argon/jquery.lavalamp.min.js"></script>
 <!-- Optional JS -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/jvectormap-next/jquery-jvectormap.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/js/vendor/jvectormap/jquery-jvectormap-world-mill.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="http://demo.anastasia.ai/public/global/argon/assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<script src="http://demo.anastasia.ai/public/app/index/controller.js"></script>
-<script src="http://demo.anastasia.ai/public/app/index/main.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/controllerPasswordModule.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/mainPasswordModule.js"></script>
-<script src="http://demo.anastasia.ai/public/app/password-module/js/passwordModule.js"></script>
+<script src="base/argon/Chart.min.js"></script>
+<script src="base/argon/Chart.extension.js"></script>
+<script src="base/argon/jquery-jvectormap.min.js"></script>
+<script src="base/argon/jquery-jvectormap-world-mill.js"></script>
+<script src="base/argon/Chart.min.js"></script>
+<script src="base/argon/Chart.extension.js"></script>
+<script src="base/controller.js"></script>
+<script src="base/main.js"></script>
+<script src="base/controllerPasswordModule.js"></script>
+<script src="base/mainPasswordModule.js"></script>
+<script src="base/passwordModule.js"></script>
 <!-- Argon JS -->
-<script src="http://demo.anastasia.ai/public/global/argon/assets/js/argon.js?v=1.0.0"></script>
+<script src="base/argon/argon.js"></script>
 </div>
+
 <!-- Demo JS - remove this in your project -->
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/argon/assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/moment/min/moment.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/moment/min/locales.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/tools/remarkable-bootstrap-notify/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/default.js"></script>
-<script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script>
+<script type="text/javascript" src="base/argon/sweetalert2.min.js"></script>
+<script type="text/javascript" src="base/tools/moment.min.js"></script>
+<script type="text/javascript" src="base/tools/locales.min.js"></script>
+<script type="text/javascript" src="base/tools/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="base/global/default.js"></script>
+<script type="text/javascript" src="base/global/main.js"></script>
 <!-- <script type="text/javascript" src="http://demo.anastasia.ai/public/global/js/main.js"></script> -->
 
 </body>
