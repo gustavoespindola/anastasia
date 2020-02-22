@@ -1,3 +1,5 @@
+// @import 'modal';
+
 $blue: #5e72e4;
 $indigo: #5603ad;
 $purple: #8965e0;
@@ -344,6 +346,22 @@ section{
 	font-size: $fs-xxs;
 }
 
+.fa-spinner-third{
+		animation-name: spin;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+}
+
+@keyframes spin {
+from {
+transform:rotate(0deg);
+}
+to {
+transform:rotate(360deg);
+}
+}
+
 // Loader
 .pace {
   -webkit-pointer-events: none;
@@ -420,6 +438,23 @@ section{
 @keyframes pace-spinner {
   0% { transform: rotate(0deg); transform: rotate(0deg); }
   100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+// Modal
+.modal{
+	background-color: rgba(white,.1);
+}
+.modal.show{
+	background-color: rgba(white,.8);
+}
+.modal-dialog, .modal-content {
+	box-shadow: none !important;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+	border-radius: 0;
 }
 
 
