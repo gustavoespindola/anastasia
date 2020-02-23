@@ -237,20 +237,21 @@ header{
 
 .main-content{
 	height: 100vh;
-	.card-project-link{
-		position: absolute;
-		right: 0;
-		width: 4rem;
-		height: 100%;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-align: center !important;
-		align-items: center !important;
-		font-size: 1.5rem;
-		text-align: center;
-		margin: 0;
-		justify-content: center!important;
-	}
+}
+
+.card-project-link{
+	position: absolute;
+	right: 0;
+	width: 4rem;
+	height: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center !important;
+	align-items: center !important;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0;
+	justify-content: center!important;
 }
 
 .card-project{
@@ -442,21 +443,26 @@ transform:rotate(360deg);
 
 // Modal
 .modal{
-	background-color: rgba(white,.1);
-}
-.modal.show{
-	background-color: rgba(white,.8);
-}
-.modal-dialog, .modal-content {
-	box-shadow: none !important;
-	width: 100%;
-	height: 100%;
-	max-width: 100%;
-	max-height: 100%;
-	margin: 0;
-	border-radius: 0;
+	&.modal-fullscreen{
+		background-color: rgba(white,.1);
+		&.show{
+			background-color: rgba(white,.8);
+		}
+		.modal-dialog, .modal-content {
+			box-shadow: none !important;
+			width: 100%;
+			height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0;
+			border-radius: 0;
+		}
+	}
 }
 
+.border-top{
+		border-top: 1px solid rgba(0,0,0,.18);
+	}
 
 // CHART
 /* Chart.js */
