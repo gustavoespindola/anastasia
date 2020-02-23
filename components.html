@@ -122,10 +122,10 @@
 	<div class="modal modal-fullscreen fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
 
-	  <div class="modal-dialog animated pulse" role="document">
+	  <div class="modal-dialog" role="document">
 
 
-	    <div class="modal-content">
+	    <div class="modal-content animated pulse">
 
 	    	<header class="row main-header py-3 animated fadeIn">
 	    		<div class="container align-items-center">
@@ -149,68 +149,68 @@
 	    		</div>
 	    	</header>
 
+      <div class="modal-body">
+        <div class="container">
+        	<div class="row justify-content-center py-3">
+        		<div class="col-6">
+
+        			<div class="mb-5">
+        				<h3>General</h3>
+        				<p>En esta sección se cargan los archivos para posterior entrenamiento de la plataforma.</p>
+        			</div>
+
+        			<form action="#" id="crudForm" role="form" data-select2-id="crudForm">
+
+        				<div class="fieldset mb-5">
+        					<label for="">Seleccione tipo de archivo a subir</label>
+        					<select name="" id="" class="form-control select2 select2-hidden-accessible">
+        						<option value="1">1</option>
+        						<option value="2">2</option>
+        						<option value="3">3</option>
+        						<option value="4">4</option>
+        					</select>
+
+        					<!-- Para Oculatar solo agregar clase "d-none" -->
+        					<small class="hint d-block my-2"><span class="badge badge-info badge- mr-2"><i class="far fa-question-circle mr-2"></i>Ayuda</span> <span class="text-muted">Lorem Ipsum ver ejemplo de archivos</span></small>
+        				</div>
+
+        				<div class="fieldset">
+        					<label for="">Subir Archivo</label>
+        					<p>Este proceso puede tardar un tiempo, el sistema te notificará cuando tu archivo esté arriba.</p>
+        					
+        					<!-- Eliminar -->
+        					<div class="custom-file">
+        					    <input type="file" class="custom-file-input" id="validatedCustomFile" required="">
+        					    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+        					    <div class="invalid-feedback">Example invalid custom file feedback</div>
+        					  </div>
+        					<!-- // Eliminar -->
+
+        					<small class="hint d-block my-2"><span class="text-muted">Solo archivos .CSV .XMLS 100MB Máximo</span></small>
 
 
-	      <div class="modal-body">
-	        <div class="container">
-	        	<div class="row justify-content-center py-3">
-	        		<div class="col-6">
-
-	        			<div class="mb-5">
-	        				<h3>General</h3>
-	        				<p>En esta sección se cargan los archivos para posterior entrenamiento de la plataforma.</p>
-	        			</div>
-
-	        			<form action="#" id="crudForm" role="form" data-select2-id="crudForm">
-
-	        				<div class="fieldset mb-5">
-	        					<label for="">Seleccione tipo de archivo a subir</label>
-	        					<select name="" id="" class="form-control select2 select2-hidden-accessible">
-	        						<option value="1">1</option>
-	        						<option value="2">2</option>
-	        						<option value="3">3</option>
-	        						<option value="4">4</option>
-	        					</select>
-
-	        					<!-- Para Oculatar solo agregar clase "d-none" -->
-	        					<small class="hint d-block my-2"><span class="badge badge-info badge- mr-2"><i class="far fa-question-circle mr-2"></i>Ayuda</span> <span class="text-muted">Lorem Ipsum ver ejemplo de archivos</span></small>
-	        				</div>
-
-	        				<div class="fieldset">
-	        					<label for="">Subir Archivo</label>
-	        					<p>Este proceso puede tardar un tiempo, el sistema te notificará cuando tu archivo esté arriba.</p>
-	        					
-	        					<!-- Eliminar -->
-	        					<div class="custom-file">
-	        					    <input type="file" class="custom-file-input" id="validatedCustomFile" required="">
-	        					    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-	        					    <div class="invalid-feedback">Example invalid custom file feedback</div>
-	        					  </div>
-	        					<!-- // Eliminar -->
-
-	        					<small class="hint d-block my-2"><span class="text-muted">Solo archivos .CSV .XMLS 100MB Máximo</span></small>
+        					
+        				</div>
+        				
+        			</form>
+        		</div>
+        	</div>
+        </div>
+      </div>
 
 
-	        					
-	        				</div>
-	        				
-	        			</form>
-	        		</div>
-	        	</div>
-	        </div>
-	      </div>
+      <div class="modal-footer">
+      	<div class="container">
+      		<div class="row justify-content-center">
+      			<div class="col-6 border-top pt-3">
+      				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      				<button type="button" class="btn btn-primary">Subir Archivos</button>
+      			</div>
+      		</div>
+      	</div>
+      </div>
 
 
-	      <div class="modal-footer">
-	      	<div class="container">
-	      		<div class="row justify-content-center">
-	      			<div class="col-6 border-top pt-3">
-	      				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-	      				<button type="button" class="btn btn-primary">Subir Archivos</button>
-	      			</div>
-	      		</div>
-	      	</div>
-	      </div>
 	    </div>
 	  </div>
 	</div>
