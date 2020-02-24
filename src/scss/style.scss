@@ -495,7 +495,7 @@ transform:rotate(360deg);
 	&.modal-fullscreen{
 		background-color: rgba(white,.1);
 		&.show{
-			background-color: rgba(white,.75);
+			background-color: rgba(white,.5);
 		}
 		.modal-dialog{
 			width: 100%;
@@ -515,7 +515,7 @@ transform:rotate(360deg);
 
 		.modal-content {
 			box-shadow: none !important;
-			background-color: rgba(white,.75);
+			background-color: rgba(white,.95);
 			label{
 				font-size: $fs-xs; //12px
 				font-weight: bold;
