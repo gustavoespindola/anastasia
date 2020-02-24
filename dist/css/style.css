@@ -84,13 +84,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 aside {
   background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15rem;
 }
 
 aside .dashboard-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   padding: 1rem 2rem 0 1rem;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
@@ -559,6 +566,21 @@ canvas {
 
 .signin .sign-brand-img {
   max-width: 4rem;
+}
+
+.project aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15rem;
+}
+
+.project .dashboard-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
