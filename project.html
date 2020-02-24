@@ -668,105 +668,105 @@
 					</div>
 			</div>
 
-				<!-- Modal Activity Log-->
-					<div class="modal modal-fullscreen fade" id="activitylog" tabindex="-1" role="dialog" aria-labelledby="activitylog" aria-hidden="true">
+			<!-- Modal Activity Log-->
+				<div class="modal modal-fullscreen fade" id="activitylog" tabindex="-1" role="dialog" aria-labelledby="activitylog" aria-hidden="true">
 
 
-							<div class="modal-dialog" role="document">
+						<div class="modal-dialog" role="document">
 
 
-									<div class="modal-content animated pulse">
+								<div class="modal-content animated pulse">
 
-										<header class="row main-header py-3 animated fadeIn">
-											<div class="container align-items-center">
-												<div class="row align-items-center">
+									<header class="row main-header py-3 animated fadeIn">
+										<div class="container align-items-center">
+											<div class="row align-items-center">
+												
+												<div class="col-6">
+													<h3 class="m-0">
+														<i class="fal fa-terminal"></i>
+														<span class="ml-2">ActivityLog</span>
+													</h3>
+												</div>
+
+												<div class="col-6 d-flex justify-content-end align-items-center">
+
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true"><i class="fal fa-times"></i></span>
+													</button>
 													
+												</div>
+											</div>
+										</div>
+									</header>
+
+									<div class="modal-body">
+											<div class="container">
+												<div class="row justify-content-center py-3">
 													<div class="col-6">
-														<h3 class="m-0">
-															<i class="fal fa-terminal"></i>
-															<span class="ml-2">ActivityLog</span>
-														</h3>
-													</div>
 
-													<div class="col-6 d-flex justify-content-end align-items-center">
+														<div class="card">
+															<div class="bg-transparent card-header">
+																<h3 class="">Actividad</h3>
+																<p class="mb-0">Selecciona las fechas para revisar las acciones que se han registrado en el portal.</p>
 
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-																<span aria-hidden="true"><i class="fal fa-times"></i></span>
-														</button>
-														
+															<div class="text-center mt-3">
+
+														<div data-toggle="buttons" role="group" class="btn-group-toggle btn-group">
+															<button id="btnToday" type="button" class="btn btn-outline-primary focus active">
+																<input autocomplete="true" name="options" type="radio" value="false">Hoy
+															</button>
+															<button id="btnYesterday" type="button" class="btn btn-outline-primary">
+																<input autocomplete="off" name="options" type="radio" value="false">Ayer
+															</button>
+															<button id="btnWeek" type="button" class="btn btn-outline-primary">
+																<input autocomplete="off" name="options" type="radio" value="false">Últimos 7 días
+															</button>
+															<button id="btnMonth" type="button" class="btn btn-outline-primary">
+																<input autocomplete="off" name="options" type="radio" value="false">Últimos 30 días
+															</button>
+														</div>
+
+															</div>
+
+															</div>
+															<div class="card-body">
+
+																<div class="timeline timeline-one-side" data-timeline-axis-style="dashed" data-timeline-content="axis">
+
+																	<!--  -->
+																	<div class="timeline-block"><span class="timeline-step badge-success"><i class="fal fa-bell"></i></span>
+																		<div class="timeline-content"><small class="text-muted font-weight-bold">Actividad</small>
+																		<h5 class="mt-3 mb-0">
+																			<span>Demo Retail</span>
+																		</h5>
+																			<p class="text-sm mt-1 mb-0">Anastasia Chile inició sesión un minuto atrás.</p>
+																			<div class="time d-block my-2">
+																				<small class="text-muted">
+																					<span>Log</span>
+																					<i class="fal fa-history mr-2"></i>
+																					<span>23-02-2020 / 23:46:41</span>
+																				</small>
+																			</div>
+																			<div class="mt-3 badges">
+																				<span class="badge badge-success badge-pill">Demo Retail</span>
+																			</div>
+																		</div>
+																	</div>
+																	<!--  -->
+
+
+																</div>
+															</div>
+														</div>
+
 													</div>
 												</div>
 											</div>
-										</header>
-
-										<div class="modal-body">
-												<div class="container">
-													<div class="row justify-content-center py-3">
-														<div class="col-6">
-
-<div class="card">
-	<div class="bg-transparent card-header">
-		<h3 class="">Actividad</h3>
-		<p class="mb-0">Selecciona las fechas para revisar las acciones que se han registrado en el portal.</p>
-
-	<div class="text-center mt-3">
-
-<div data-toggle="buttons" role="group" class="btn-group-toggle btn-group">
-	<button id="btnToday" type="button" class="btn btn-outline-primary focus active">
-		<input autocomplete="true" name="options" type="radio" value="false">Hoy
-	</button>
-	<button id="btnYesterday" type="button" class="btn btn-outline-primary">
-		<input autocomplete="off" name="options" type="radio" value="false">Ayer
-	</button>
-	<button id="btnWeek" type="button" class="btn btn-outline-primary">
-		<input autocomplete="off" name="options" type="radio" value="false">Últimos 7 días
-	</button>
-	<button id="btnMonth" type="button" class="btn btn-outline-primary">
-		<input autocomplete="off" name="options" type="radio" value="false">Últimos 30 días
-	</button>
-</div>
-
-	</div>
-
-	</div>
-	<div class="card-body">
-
-		<div class="timeline timeline-one-side" data-timeline-axis-style="dashed" data-timeline-content="axis">
-
-			<!--  -->
-			<div class="timeline-block"><span class="timeline-step badge-success"><i class="fal fa-bell"></i></span>
-				<div class="timeline-content"><small class="text-muted font-weight-bold">Actividad</small>
-				<h5 class="mt-3 mb-0">
-					<span>Demo Retail</span>
-				</h5>
-					<p class="text-sm mt-1 mb-0">Anastasia Chile inició sesión un minuto atrás.</p>
-					<div class="time d-block my-2">
-						<small class="text-muted">
-							<span>Log</span>
-							<i class="fal fa-history mr-2"></i>
-							<span>23-02-2020 / 23:46:41</span>
-						</small>
-					</div>
-					<div class="mt-3 badges">
-						<span class="badge badge-success badge-pill">Demo Retail</span>
-					</div>
-				</div>
-			</div>
-			<!--  -->
-
-
-		</div>
-	</div>
-</div>
-
-														</div>
-													</div>
-												</div>
-										</div>
-
 									</div>
-							</div>
-					</div>
+
+								</div>
+						</div>
+				</div>
 
 
 	<!-- Core JS files -->

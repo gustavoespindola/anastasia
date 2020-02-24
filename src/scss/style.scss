@@ -498,6 +498,14 @@ transform:rotate(360deg);
 	}
 }
 
+#CreateProject{
+	.card{
+		
+			box-shadow: -3px -3px 24px 0 rgba(255, 255, 255, 0.25), 3px 3px 24px 0 rgba(136, 152, 170, 0.1) !important;
+		
+	}
+}
+
 .border-{
 	border-color: rgba(0,0,0,.18);
 	// border-width: 1px;
