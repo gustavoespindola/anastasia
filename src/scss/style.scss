@@ -164,16 +164,19 @@ aside{
 		font-size: .75rem;
 		letter-spacing: .5px;
 	}
-	.btn{
-		color: $a-color-gray-dark;
-		position: relative;
-		&.btn-active{
-			background-color: rgba($a-color-blue,.15);
-			color: $a-color-blue;
-		}
-		&:hover{
-			box-shadow: 0 !important;
-			background-color: rgba($a-color-gray-light,.15) !important;
+	.nav-primary{
+		.btn{
+			color: $a-color-gray-dark;
+			position: relative;
+			display: block;
+			&.btn-active{
+				background-color: rgba($a-color-blue,.15);
+				color: $a-color-blue;
+			}
+			&:hover{
+				box-shadow: 0 !important;
+				background-color: rgba($a-color-gray-light,.15) !important;
+			}
 		}
 	}
 	[data-toggle=collapse]:after {

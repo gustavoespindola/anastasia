@@ -36,7 +36,11 @@
 			
 					<div class="dashboard-aside justify-content-center">
 						<img src="dist/img/isotype.svg" class="navbar-brand-img">
-						<h6 class="nav-label"></h6>
+						<!-- <h6 class="nav-label"></h6> -->
+
+						<a href="#" class="btn btn-primary my-4 d-block w-100 text-center">
+								<span>Crear Proyecto</span>
+							</a>
 
 						<nav class="nav-primary">
 
@@ -127,30 +131,34 @@
 							<div class="col-6 d-flex justify-content-end align-items-center">
 								
 
-								<div class="dropdown">
-								  <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<div class="dropdown nav-item">
+								  <a class="nav-link pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								  		<i class="fad fa-bell btn-notification"></i>
 								  </a>
 
-								  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
 								    <a class="dropdown-item" href="#">Action</a>
 								    <a class="dropdown-item" href="#">Another action</a>
 								    <a class="dropdown-item" href="#">Something else here</a>
 								  </div>
 								</div>
 
-								<div class="dropdown">
-								  <a class=" " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								    <div class="btn-useraccount">
-								    	<img src="https://randomuser.me/api/portraits/women/79.jpg" alt="">
-								    </div>
-								  </a>
+								<div class="align-items-center ml-auto ml-md-0 navbar-nav">
 
-								  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								    <a class="dropdown-item" href="#">Action</a>
-								    <a class="dropdown-item" href="#">Another action</a>
-								    <a class="dropdown-item" href="#">Something else here</a>
-								  </div>
+									<div class="dropdown nav-item">
+									  <a class="nav-link pr-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    <div class="align-items-center media btn-useraccount">
+									    	<span class="avatar avatar-md rounded-circle"><img alt="..." src="https://randomuser.me/api/portraits/women/79.jpg"></span>
+									    </div>
+									  </a>
+
+									  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+									    <a class="dropdown-item" href="#">Action</a>
+									    <a class="dropdown-item" href="#">Another action</a>
+									    <a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>									
+
 								</div>
 
 							</div>
@@ -178,9 +186,24 @@
 										</div>
 									</div>
 								</div>
+
 								<div class="col-md-4 text-right">
-									<a href="/create-project.html" class="btn btn-outline-primary">Crear Proyecto</a>
+							
+									<div class="dropdown filter-dropdown">
+										<a href="#" class="btn btn-outline-primary" role="button" id="dropdownFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fal fa-align-left mr-2"></i>Filtrar</a>
+
+									  <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="dropdownMenuLink">
+									  	<div tabindex="-1" class="noti-title dropdown-header"><h6 class="text-overflow m-0">Por Proyecto</h6></div>
+									    <a class="dropdown-item" href="#">Predicción</a>
+									    <a class="dropdown-item" href="#">Recomendación</a>
+									    <a class="dropdown-item" href="#">Conversación</a>
+									    <a class="dropdown-item" href="#">Rutas</a>
+									  </div>
+									</div>
+								
 								</div>
+
 							</div>
 							<div class="row">
 								

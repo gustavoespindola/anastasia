@@ -122,17 +122,18 @@ aside .nav-label {
   letter-spacing: .5px;
 }
 
-aside .btn {
+aside .nav-primary .btn {
   color: #706f6f;
   position: relative;
+  display: block;
 }
 
-aside .btn.btn-active {
+aside .nav-primary .btn.btn-active {
   background-color: rgba(0, 175, 224, 0.15);
   color: #00afe0;
 }
 
-aside .btn:hover {
+aside .nav-primary .btn:hover {
   box-shadow: 0 !important;
   background-color: rgba(179, 178, 177, 0.15) !important;
 }
