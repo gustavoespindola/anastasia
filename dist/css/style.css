@@ -529,4 +529,16 @@ canvas {
   top: 0;
 }
 
+.signin {
+  height: 100vh;
+}
+
+.signin main, .signin .signin-row {
+  height: 100vh;
+}
+
+.signin .sign-brand-img {
+  max-width: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
