@@ -1,4 +1,4 @@
-// @import 'reset';
+// @import 'argon-dashboard-react.scss';
 
 $blue: #5e72e4;
 $indigo: #5603ad;
@@ -30,6 +30,7 @@ $darker: black;
 
 $a-color-gray-light: rgba(179,178,177,1);
 $a-color-gray-dark: rgba(112,111,111,1);
+
 
 $a-color-blue: rgba(0,175,224,1);
 $a-color-green: rgba(112,212,75,1);
@@ -121,12 +122,6 @@ html{
 			}
 
 		}
-
-		&.modal-open{
-			.container-fluid.no-gutters{
-				filter: blur(3px);
-			}
-		}
 	}
 }
 
@@ -136,14 +131,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 aside{
 	background: $sidebar-bg-color;
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	width: 15rem;
 
 	.dashboard-aside{
-		position: absolute;
+		position: absolute !important;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -504,7 +499,8 @@ transform:rotate(360deg);
 		}
 		.modal-dialog{
 			width: 100%;
-			min-width: 90%;
+			max-width: 70%;
+			min-width: 50%;
 			// height: 100%;
 			// max-width: 90%;
 			// max-height: 90%;
