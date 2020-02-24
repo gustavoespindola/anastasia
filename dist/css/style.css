@@ -124,6 +124,7 @@ aside .nav-label {
 
 aside .btn {
   color: #706f6f;
+  position: relative;
 }
 
 aside .btn.btn-active {
@@ -134,6 +135,30 @@ aside .btn.btn-active {
 aside .btn:hover {
   box-shadow: 0 !important;
   background-color: rgba(179, 178, 177, 0.15) !important;
+}
+
+aside [data-toggle=collapse]:after {
+  display: inline-block;
+  font-style: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: normal;
+  content: "\f105";
+  margin-left: auto;
+  color: #8898aa;
+  transition: all .15s ease;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+}
+
+aside [data-toggle=collapse][aria-expanded=true]:after {
+  color: #212529;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header {

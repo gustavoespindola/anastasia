@@ -166,6 +166,7 @@ aside{
 	}
 	.btn{
 		color: $a-color-gray-dark;
+		position: relative;
 		&.btn-active{
 			background-color: rgba($a-color-blue,.15);
 			color: $a-color-blue;
@@ -174,7 +175,29 @@ aside{
 			box-shadow: 0 !important;
 			background-color: rgba($a-color-gray-light,.15) !important;
 		}
-	} 
+	}
+	[data-toggle=collapse]:after {
+		display: inline-block;
+		font-style: normal;
+		font-feature-settings: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		font-family: "Font Awesome 5 Pro";
+		font-weight: normal;
+		content: "\f105";
+		margin-left: auto;
+		color: $gray;
+		transition: all .15s ease;
+		position: absolute;
+		top: $fs-xs;
+		right: 0.5rem;
+	}
+	[data-toggle=collapse][aria-expanded=true]:after {
+		color: $dark;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
 }
 
 header{

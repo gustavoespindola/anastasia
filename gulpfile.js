@@ -21,7 +21,7 @@ var paths = {
 	},
 };
 
-var htmlSource = '**/*.html';
+var htmlSource = './*.html';
 
 function styles() {
 	return gulp
