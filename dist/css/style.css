@@ -74,6 +74,10 @@ html body.pace-done .main-content {
   transition: opacity .075s ease, transform .35s ease;
 }
 
+html body.modal-open .container-fluid.no-gutters {
+  filter: blur(3px);
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #212529;
 }
@@ -97,10 +101,19 @@ aside .dashboard-aside a {
   text-align: left;
 }
 
-aside .navbar-brand-img {
-  margin: 0rem 0 3rem;
+aside .brand {
+  margin-bottom: 3rem;
+}
+
+aside .brand .navbar-brand-img {
   padding: .25rem 0;
   width: 2.5rem;
+}
+
+aside .brand .navbar-partner-brand-img {
+  height: auto;
+  max-width: 100%;
+  margin: auto;
 }
 
 aside nav ul {
@@ -418,26 +431,33 @@ section.project-steps .badge {
 }
 
 .modal.modal-fullscreen.show {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.modal.modal-fullscreen .modal-dialog, .modal.modal-fullscreen .modal-content {
-  box-shadow: none !important;
+.modal.modal-fullscreen .modal-dialog {
   width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0;
-  border-radius: 0;
+  min-width: 90%;
+  border-radius: 15px;
 }
 
-.modal.modal-fullscreen .modal-dialog label, .modal.modal-fullscreen .modal-content label {
+.modal.modal-fullscreen .modal-dialog header {
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.modal.modal-fullscreen .modal-content {
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.modal.modal-fullscreen .modal-content label {
   font-size: 0.75rem;
   font-weight: bold;
   color: #32325d;
 }
 
-.modal.modal-fullscreen .modal-dialog label small, .modal.modal-fullscreen .modal-content label small {
+.modal.modal-fullscreen .modal-content label small {
   font-weight: bold;
   color: #8898aa;
 }
@@ -530,11 +550,11 @@ canvas {
 }
 
 .signin {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .signin main, .signin .signin-row {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .signin .sign-brand-img {
